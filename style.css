@@ -1,0 +1,39 @@
+/* style.css – минимальное, но приятное оформление */
+
+/* 1. Общий сброс отступов и выбор семейства шрифта */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Фон страницы и базовые параметры текста */
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: #f5f7fa;            /* светло-серый фон */
+    color: #333;                    /* тёмно-серый текст */
+    display: flex;                  /* центрируем содержимое */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;                  /* на всю высоту окна */
+    text-align: center;
+}
+
+/* 3. Оформление заголовка */
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* 4. Анимация «появления» */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+body > * {
+    animation: fadeIn .8s ease-out;
+}
