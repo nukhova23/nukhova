@@ -2,218 +2,214 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <title>Vosk Studio – Уход за кожей</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vosk Place – vintage & decor</title>
-    <meta name="description" content="Vosk Place – студия винтажной посуды из Европы, декора для дома и текстиля. Магазины в СПб, Москве и онлайн с доставкой по России">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="header">
-        <div class="container">
-            <div class="header-inner">
-                <a href="/" class="logo">
-                    <span class="logo-text">VOSK PLACE</span>
-                    <span class="logo-subtitle">vintage & decor</span>
-                </a>
-                
-                <!-- Desktop Menu -->
-                <nav class="nav-desktop">
-                    <ul class="nav-list">
-                        <li><a href="#catalog">Каталог</a></li>
-                        <li><a href="#about">О нас</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
-                        <li><a href="#clients">Покупателям</a></li>
-                    </ul>
-                </nav>
+<header class="header">
+    <div class="container header__inner">
+        <a href="#hero" class="logo">Vosk<span>Studio</span></a>
 
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" aria-label="Открыть меню">
-                    <span class="hamburger"></span>
-                </button>
-            </div>
+        <!-- ДЕСКТОП / ПЛАНШЕТ МЕНЮ -->
+        <nav class="nav" id="mainNav">
+            <a href="#services" class="nav__link">Услуги</a>
+            <a href="#about" class="nav__link">О нас</a>
+            <a href="#benefits" class="nav__link">Преимущества</a>
+            <a href="#gallery" class="nav__link">Галерея</a>
+            <a href="#contacts" class="nav__link nav__link--accent">Записаться</a>
+        </nav>
 
-            <!-- Mobile Menu Panel -->
-            <div class="mobile-menu-panel">
-                <div class="mobile-menu-header">
-                    <a href="/" class="logo">
-                        <span class="logo-text">VOSK PLACE</span>
-                    </a>
-                    <button class="mobile-menu-close" aria-label="Закрыть меню">
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-                <ul class="mobile-nav-list">
-                    <li><a href="#catalog">Каталог</a></li>
-                    <li><a href="#about">О нас</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                    <li><a href="#clients">Покупателям</a></li>
-                    <li><a href="#certificate">Сертификат</a></li>
-                </ul>
-                <div class="mobile-contacts">
-                    <p>+7 981 045 85 15</p>
-                    <p>voskplace@gmail.com</p>
-                </div>
-            </div>
-        </div>
-    </header>
+        <!-- КНОПКА-БУРГЕР ДЛЯ ПЛАНШЕТ/МОБИЛЬНЫЙ -->
+        <button class="burger" id="burgerBtn" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
 
-    <!-- Hero Section -->
+    <!-- МОБИЛЬНОЕ МЕНЮ (выпадающее) -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#services" class="mobile-nav__link">Услуги</a>
+        <a href="#about" class="mobile-nav__link">О нас</a>
+        <a href="#benefits" class="mobile-nav__link">Преимущества</a>
+        <a href="#gallery" class="mobile-nav__link">Галерея</a>
+        <a href="#contacts" class="mobile-nav__link mobile-nav__link--accent">Записаться</a>
+    </nav>
+</header>
+
+<main>
+    <!-- HERO -->
     <section class="hero" id="hero">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600" alt="Винтажная посуда" loading="lazy">
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content container">
-            <h1 class="hero-title">
-                <span class="hero-title-main">ВИНТАЖНАЯ ПОСУДА</span>
-                <span class="hero-title-sub">И АКСЕССУАРЫ</span>
-            </h1>
-            <div class="hero-actions">
-                <a href="#catalog" class="btn btn-primary">Смотреть каталог</a>
-                <a href="#about" class="btn btn-secondary">О магазине</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">О нас</h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-lead">Привет, мы Вика и Илия Воскресенские, да-да именно поэтому мы Vosk Place, хотя и воск в стенах нашей студии тоже частенько плавится.</p>
-                    <p>Мы создали это пространство не просто как магазин, а как студию винтажа и декора, где каждая вещь рассказывает свою историю. С 2018 года мы собираем лучшие образцы европейской винтажной посуды, текстиля и предметов интерьера.</p>
-                    <a href="#about" class="btn btn-outline">Узнать больше</a>
+        <div class="container hero__inner">
+            <div class="hero__text">
+                <h1>Современная студия ухода за кожей</h1>
+                <p>Деликатные процедуры, премиальные материалы и уютная атмосфера — всё, чтобы ты чувствовала себя уверенно каждый день.</p>
+                <div class="hero__actions">
+                    <a href="#contacts" class="btn btn--primary">Записаться онлайн</a>
+                    <a href="#services" class="btn btn--ghost">Смотреть услуги</a>
                 </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" alt="Владельцы Vosk Place" loading="lazy">
+                <div class="hero__note">
+                    <span>Работаем ежедневно</span>
+                    <span>Москва · центр города</span>
+                </div>
+            </div>
+            <div class="hero__image">
+                <!-- поставь сюда свою картинку -->
+                <div class="hero__photo-placeholder">
+                    Фото студии / мастера
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Catalog Section -->
-    <section class="catalog" id="catalog">
+    <!-- УСЛУГИ -->
+    <section class="section section--light" id="services">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Каталог</h2>
-                <div class="section-divider"></div>
+            <h2 class="section__title">Популярные услуги</h2>
+            <p class="section__subtitle">Подбери процедуру под себя — мы поможем с выбором.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3 class="card__title">Депиляция воском</h3>
+                    <p class="card__text">Классические и деликатные зоны, комфортная температура воска и одноразовые материалы.</p>
+                    <div class="card__footer">
+                        <span class="card__price">от 1 500 ₽</span>
+                        <button class="card__btn js-open-modal" data-service="Депиляция воском">Записаться</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3 class="card__title">Уход за бровями</h3>
+                    <p class="card__text">Коррекция, окрашивание и долговременная укладка для аккуратного и естественного эффекта.</p>
+                    <div class="card__footer">
+                        <span class="card__price">от 1 200 ₽</span>
+                        <button class="card__btn js-open-modal" data-service="Уход за бровями">Записаться</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3 class="card__title">SPA-уход</h3>
+                    <p class="card__text">Расслабляющие процедуры для тела и кожи, ароматические масла и мягкий текстиль.</p>
+                    <div class="card__footer">
+                        <span class="card__price">от 2 000 ₽</span>
+                        <button class="card__btn js-open-modal" data-service="SPA-уход">Записаться</button>
+                    </div>
+                </article>
             </div>
-            <div class="catalog-grid">
-                <div class="category-card">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1563533717-2ce3e20bc6cc?w=600" alt="Посуда" loading="lazy">
-                    </div>
-                    <h3 class="category-title">Посуда</h3>
-                    <p class="category-count">120+ позиций</p>
-                    <a href="#" class="category-link">Смотреть все →</a>
+        </div>
+    </section>
+
+    <!-- О НАС -->
+    <section class="section" id="about">
+        <div class="container section__split">
+            <div>
+                <h2 class="section__title">О студии</h2>
+                <p>Мы специализируемся на бережных процедурах для кожи и создаём атмосферу, в которую хочется возвращаться. Работают только сертифицированные мастера, материалы — профессиональные, с подтверждённым качеством.</p>
+                <p>Каждому гостю подбираем индивидуальный уход и подробно рассказываем, как поддерживать результат дома.</p>
+            </div>
+            <ul class="list">
+                <li class="list__item">✔ Одноразовые расходники и стерильные инструменты</li>
+                <li class="list__item">✔ Удобная онлайн-запись и напоминания</li>
+                <li class="list__item">✔ Лёгкая система скидок для постоянных гостей</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="section section--light" id="benefits">
+        <div class="container">
+            <h2 class="section__title">Почему выбирают нас</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Комфорт</h3>
+                    <p>Тёплые пледы, напитки, спокойная музыка и заботливые мастера.</p>
                 </div>
-                <div class="category-card">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1555597906-44a7f7e3e0e5?w=600" alt="Декор" loading="lazy">
-                    </div>
-                    <h3 class="category-title">Декор</h3>
-                    <p class="category-count">80+ позиций</p>
-                    <a href="#" class="category-link">Смотреть все →</a>
+                <div class="benefit">
+                    <h3>Безопасность</h3>
+                    <p>Соблюдаем все санитарные нормы и протоколы обработки.</p>
                 </div>
-                <div class="category-card">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600" alt="Текстиль" loading="lazy">
-                    </div>
-                    <h3 class="category-title">Текстиль</h3>
-                    <p class="category-count">60+ позиций</p>
-                    <a href="#" class="category-link">Смотреть все →</a>
-                </div>
-                <div class="category-card">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600" alt="Свечи" loading="lazy">
-                    </div>
-                    <h3 class="category-title">Спички и свечи</h3>
-                    <p class="category-count">40+ позиций</p>
-                    <a href="#" class="category-link">Смотреть все →</a>
+                <div class="benefit">
+                    <h3>Результат</h3>
+                    <p>Подбираем процедуры под твой тип кожи и ожидаемый эффект.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Certificate Section -->
-    <section class="certificate" id="certificate">
+    <!-- ГАЛЕРЕЯ -->
+    <section class="section" id="gallery">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Подарочный сертификат</h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="certificate-content">
-                <p class="certificate-text">Если Вы хотите порадовать своих близких, предоставив им возможность самостоятельно выбрать то, что им понравится, оформите наш подарочный сертификат. Это будет приятный подарок как онлайн, так и лично в руки.</p>
-                <a href="#" class="btn btn-primary">Оформить сертификат</a>
+            <h2 class="section__title">Атмосфера студии</h2>
+            <div class="gallery">
+                <div class="gallery__item">Фото 1</div>
+                <div class="gallery__item">Фото 2</div>
+                <div class="gallery__item">Фото 3</div>
+                <div class="gallery__item">Фото 4</div>
             </div>
         </div>
     </section>
 
-    <!-- Contacts Section -->
-    <section class="contacts" id="contacts">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Контакты</h2>
-                <div class="section-divider"></div>
+    <!-- КОНТАКТЫ / ФОРМА -->
+    <section class="section section--accent" id="contacts">
+        <div class="container contacts">
+            <div class="contacts__info">
+                <h2 class="section__title section__title--light">Запишись на процедуру</h2>
+                <p>Оставь заявку — администратор свяжется с тобой, уточнит детали и подберёт удобное время.</p>
+                <ul class="contacts__list">
+                    <li>Телефон: <a href="tel:+79999999999">+7 (999) 999-99-99</a></li>
+                    <li>Telegram: <a href="#">@voskstudio</a></li>
+                    <li>Адрес: Москва, ул. Примерная, 10</li>
+                </ul>
             </div>
-            <div class="contacts-grid">
-                <div class="contact-card">
-                    <h3 class="contact-city">Санкт-Петербург</h3>
-                    <p class="contact-address">Ул. Союза Печатников, 6</p>
-                    <p class="contact-hours">Ежедневно 12:00–20:00</p>
-                    <a href="tel:+79810458515" class="contact-phone">+7 981 045 85 15</a>
-                    <div class="contact-links">
-                        <a href="#" class="contact-link telegram">Telegram</a>
-                        <a href="#" class="contact-link whatsapp">WhatsApp</a>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <h3 class="contact-city">Москва</h3>
-                    <p class="contact-address">Кутузовский проспект, 18</p>
-                    <p class="contact-hours">Ежедневно 12:00–20:00</p>
-                    <a href="tel:+79854458111" class="contact-phone">+7 985 445 81 11</a>
-                    <div class="contact-links">
-                        <a href="#" class="contact-link telegram">Telegram</a>
-                        <a href="#" class="contact-link whatsapp">WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-            <div class="contacts-bottom">
-                <p class="contacts-email">Email: <a href="mailto:voskplace@gmail.com">voskplace@gmail.com</a></p>
-                <div class="social-links">
-                    <a href="#" class="social-link">Telegram канал</a>
-                    <a href="#" class="social-link">Вконтакте</a>
-                    <a href="#" class="social-link">Pinterest</a>
-                    <a href="#" class="social-link">Instagram</a>
-                </div>
-            </div>
+
+            <form class="form" id="bookingForm">
+                <label class="form__field">
+                    <span>Имя</span>
+                    <input type="text" name="name" required>
+                </label>
+                <label class="form__field">
+                    <span>Телефон</span>
+                    <input type="tel" name="phone" required>
+                </label>
+                <label class="form__field">
+                    <span>Комментарий</span>
+                    <textarea name="comment" rows="3" placeholder="Желаемая услуга и время"></textarea>
+                </label>
+                <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+                <p class="form__note">Нажимая на кнопку, ты соглашаешься с обработкой персональных данных.</p>
+            </form>
         </div>
     </section>
+</main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <p>© 2024 Vosk Place – vintage & decor</p>
-                    <p>Студия винтажной посуды и декора</p>
-                </div>
-                <div class="footer-legal">
-                    <p>*Компания Meta Platforms Inc., владеющая социальными сетями Facebook и Instagram, по решению суда от 21.03.2022 признана экстремистской организацией, ее деятельность на территории России запрещена.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+<footer class="footer">
+    <div class="container footer__inner">
+        <span>© 2025 Vosk Studio</span>
+        <a href="#hero" class="footer__link">Наверх ↑</a>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<!-- МОДАЛКА ЗАПИСИ -->
+<div class="modal" id="modal">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__window">
+        <button class="modal__close" id="modalClose" aria-label="Закрыть">×</button>
+        <h3 class="modal__title" id="modalTitle">Записаться на услугу</h3>
+        <form class="form" id="modalForm">
+            <label class="form__field">
+                <span>Имя</span>
+                <input type="text" name="name" required>
+            </label>
+            <label class="form__field">
+                <span>Телефон</span>
+                <input type="tel" name="phone" required>
+            </label>
+            <button type="submit" class="btn btn--primary btn--full">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
