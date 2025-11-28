@@ -1,11 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Привет мир!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vosk Place – vintage & decor</title>
+    <meta name="description" content="Vosk Place – студия винтажной посуды из Европы, декора для дома и текстиля. Магазины в СПб, Москве и онлайн с доставкой по России">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    Привет мир!!!
-    <link rel="stylesheet" href="style.css">
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="/" class="logo">
+                    <span class="logo-text">VOSK PLACE</span>
+                    <span class="logo-subtitle">vintage & decor</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <nav class="nav-desktop">
+                    <ul class="nav-list">
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="#clients">Покупателям</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" aria-label="Открыть меню">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Panel -->
+            <div class="mobile-menu-panel">
+                <div class="mobile-menu-header">
+                    <a href="/" class="logo">
+                        <span class="logo-text">VOSK PLACE</span>
+                    </a>
+                    <button class="mobile-menu-close" aria-label="Закрыть меню">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <ul class="mobile-nav-list">
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#clients">Покупателям</a></li>
+                    <li><a href="#certificate">Сертификат</a></li>
+                </ul>
+                <div class="mobile-contacts">
+                    <p>+7 981 045 85 15</p>
+                    <p>voskplace@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600" alt="Винтажная посуда" loading="lazy">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content container">
+            <h1 class="hero-title">
+                <span class="hero-title-main">ВИНТАЖНАЯ ПОСУДА</span>
+                <span class="hero-title-sub">И АКСЕССУАРЫ</span>
+            </h1>
+            <div class="hero-actions">
+                <a href="#catalog" class="btn btn-primary">Смотреть каталог</a>
+                <a href="#about" class="btn btn-secondary">О магазине</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">О нас</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-lead">Привет, мы Вика и Илия Воскресенские, да-да именно поэтому мы Vosk Place, хотя и воск в стенах нашей студии тоже частенько плавится.</p>
+                    <p>Мы создали это пространство не просто как магазин, а как студию винтажа и декора, где каждая вещь рассказывает свою историю. С 2018 года мы собираем лучшие образцы европейской винтажной посуды, текстиля и предметов интерьера.</p>
+                    <a href="#about" class="btn btn-outline">Узнать больше</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" alt="Владельцы Vosk Place" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Каталог</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="catalog-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1563533717-2ce3e20bc6cc?w=600" alt="Посуда" loading="lazy">
+                    </div>
+                    <h3 class="category-title">Посуда</h3>
+                    <p class="category-count">120+ позиций</p>
+                    <a href="#" class="category-link">Смотреть все →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1555597906-44a7f7e3e0e5?w=600" alt="Декор" loading="lazy">
+                    </div>
+                    <h3 class="category-title">Декор</h3>
+                    <p class="category-count">80+ позиций</p>
+                    <a href="#" class="category-link">Смотреть все →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600" alt="Текстиль" loading="lazy">
+                    </div>
+                    <h3 class="category-title">Текстиль</h3>
+                    <p class="category-count">60+ позиций</p>
+                    <a href="#" class="category-link">Смотреть все →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600" alt="Свечи" loading="lazy">
+                    </div>
+                    <h3 class="category-title">Спички и свечи</h3>
+                    <p class="category-count">40+ позиций</p>
+                    <a href="#" class="category-link">Смотреть все →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <section class="certificate" id="certificate">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Подарочный сертификат</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="certificate-content">
+                <p class="certificate-text">Если Вы хотите порадовать своих близких, предоставив им возможность самостоятельно выбрать то, что им понравится, оформите наш подарочный сертификат. Это будет приятный подарок как онлайн, так и лично в руки.</p>
+                <a href="#" class="btn btn-primary">Оформить сертификат</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Контакты</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contacts-grid">
+                <div class="contact-card">
+                    <h3 class="contact-city">Санкт-Петербург</h3>
+                    <p class="contact-address">Ул. Союза Печатников, 6</p>
+                    <p class="contact-hours">Ежедневно 12:00–20:00</p>
+                    <a href="tel:+79810458515" class="contact-phone">+7 981 045 85 15</a>
+                    <div class="contact-links">
+                        <a href="#" class="contact-link telegram">Telegram</a>
+                        <a href="#" class="contact-link whatsapp">WhatsApp</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <h3 class="contact-city">Москва</h3>
+                    <p class="contact-address">Кутузовский проспект, 18</p>
+                    <p class="contact-hours">Ежедневно 12:00–20:00</p>
+                    <a href="tel:+79854458111" class="contact-phone">+7 985 445 81 11</a>
+                    <div class="contact-links">
+                        <a href="#" class="contact-link telegram">Telegram</a>
+                        <a href="#" class="contact-link whatsapp">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts-bottom">
+                <p class="contacts-email">Email: <a href="mailto:voskplace@gmail.com">voskplace@gmail.com</a></p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Telegram канал</a>
+                    <a href="#" class="social-link">Вконтакте</a>
+                    <a href="#" class="social-link">Pinterest</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>© 2024 Vosk Place – vintage & decor</p>
+                    <p>Студия винтажной посуды и декора</p>
+                </div>
+                <div class="footer-legal">
+                    <p>*Компания Meta Platforms Inc., владеющая социальными сетями Facebook и Instagram, по решению суда от 21.03.2022 признана экстремистской организацией, ее деятельность на территории России запрещена.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
